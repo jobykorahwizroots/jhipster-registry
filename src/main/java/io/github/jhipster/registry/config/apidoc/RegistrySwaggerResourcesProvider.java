@@ -20,7 +20,7 @@ import java.util.List;
  */
 @Component
 @Primary
-@Profile(JHipsterConstants.SPRING_PROFILE_SWAGGER)
+@Profile("!"+JHipsterConstants.SPRING_PROFILE_PRODUCTION)
 public class RegistrySwaggerResourcesProvider implements SwaggerResourcesProvider {
 
     private final Logger log = LoggerFactory.getLogger(RegistrySwaggerResourcesProvider.class);
